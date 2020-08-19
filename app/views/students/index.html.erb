@@ -1,0 +1,6 @@
+<h1>Students: </h1>
+<% @all.each do |student|  %>
+  <%= content_tag(:div, student) do %>
+   <%= content_tag(:p, "Name: #{student.first_name}: #{student.last_name}") %>
+  <% end %>
+<% end %>
